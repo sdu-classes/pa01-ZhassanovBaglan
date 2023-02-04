@@ -26,4 +26,13 @@ public class Time{
   public void setSecond(int second) {
     this.second = second;
   }
+  public void setTime(int h, int m, int s){
+    this.hour = h;
+    this.minute = m;
+    this.second = s;
+  }
+  public String toString(){
+    return String.format(format "%02d:%02d:%02d", hour, minute, second);
+    return hour + ":" + minute + ":" + second;
+  }
 }
